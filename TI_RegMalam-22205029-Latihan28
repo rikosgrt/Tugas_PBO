@@ -1,0 +1,34 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Mengganti kata dalam sebuah kalimat
+ */
+import java.util.Scanner;
+public class Latihan28 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("====Program Mengganti Kata====");
+        // Meminta pengguna untuk memasukkan kalimat
+        System.out.print("Masukkan kalimat \t\t: ");
+        String kalimat = scanner.nextLine();
+
+        // Meminta pengguna untuk memasukkan kata yang ingin diganti
+        System.out.print("Kata yang ingin diganti \t: ");
+        String kataLama = scanner.nextLine();
+
+        // Meminta pengguna untuk memasukkan kata pengganti
+        System.out.print("Kata pengganti \t\t\t: ");
+        String kataBaru = scanner.nextLine();
+
+        // Mengganti kata dalam kalimat
+        String kalimatBaru = kalimat.replaceAll(kataLama, kataBaru);
+
+        // Menampilkan hasil
+        System.out.println("Kalimat baru \t\t\t: " + kalimatBaru);
+    }
+}
+     

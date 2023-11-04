@@ -1,0 +1,34 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menghitung tunjangan
+ */
+import java.util.Scanner;
+public class Latihan17 {
+    public static void main(String[] args) {
+        double gajiPokok, tunjangan, totalGaji;
+        String status;
+        
+//        Masukkan nilai gaji pokok, status
+        Scanner masuk = new Scanner(System.in);
+        System.out.println("===========Program Tunjangan===========");
+        System.out.print("Berapa gaji pokok anda perbulan?\t: Rp. ");
+        gajiPokok = masuk.nextInt();
+        System.out.print("Status anda? (Menikah/Belum) \t: ");
+        status = masuk.next();
+        
+//        Menghitung tunjangan
+        tunjangan = ("Menikah".equals(status))? 0.35 * gajiPokok:0;
+//        Menghitung total gaji
+        totalGaji = gajiPokok+tunjangan;
+        
+        System.out.println("");
+        System.out.println("======Hasil Perhitungan Gaji Anda======");
+        System.out.println("Gaji Pokok \t: Rp. "+gajiPokok);
+        System.out.println("Tunjangan \t: Rp. "+tunjangan);
+        System.out.println("Total Gaji \t: Rp. "+totalGaji);
+    }
+}

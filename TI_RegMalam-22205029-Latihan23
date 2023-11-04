@@ -1,0 +1,55 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menentukan nilai terbesar & terkecil
+ */
+import java.util.Scanner;
+public class Latihan23 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("====Program Nilai Terbesar & Terkecil Nilai Mahasiswa====");
+        System.out.print("Masukkan nama petugas \t\t: ");
+        String namaPetugas = scanner.nextLine();
+
+        System.out.print("Masukkan banyakya nilai mahasiswa\t: ");
+        int jumlahNilai = scanner.nextInt();
+
+        int[] nilai = new int[jumlahNilai];
+
+        for (int i = 0; i < jumlahNilai; i++) {
+            System.out.printf("Masukkan nilai mahasiswa ke-%d : ", i + 1);
+            nilai[i] = scanner.nextInt();
+        }
+
+        int nilaiTerbesar = nilai[0];
+        int nilaiTerkecil = nilai[0];
+
+        for (int i = 1; i < jumlahNilai; i++) {
+            if (nilai[i] > nilaiTerbesar) {
+                nilaiTerbesar = nilai[i];
+            }
+
+            if (nilai[i] < nilaiTerkecil) {
+                nilaiTerkecil = nilai[i];
+            }
+        }
+
+        System.out.println();
+        System.out.println("========Hasil Nilai Mahasiswa=========");
+
+        for (int i = 0; i < jumlahNilai; i++) {
+            System.out.printf("Nilai mahasiswa ke-%d: %d\n", i + 1, nilai[i]);
+        }
+
+        System.out.println();
+        System.out.println("Nilai terbesar adalah : " + nilaiTerbesar);
+        System.out.println("Nilai terkecil adalah : " + nilaiTerkecil);
+        
+        System.out.println();
+        System.out.println("Petugas : " + namaPetugas);
+    }
+}

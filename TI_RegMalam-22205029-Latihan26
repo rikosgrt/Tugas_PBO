@@ -1,0 +1,18 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menampilkan waktu saat ini
+ */
+import java.util.Date;
+public class Latihan26 {
+    public static void main(String[] args) {
+        // Membuat objek Date untuk mendapatkan waktu saat ini sesuai dengan lokasi
+        Date waktuSaatIni = new Date();
+
+        // Menampilkan waktu saat ini
+        System.out.println("Hari ini adalah hari : " + waktuSaatIni);
+    }
+}

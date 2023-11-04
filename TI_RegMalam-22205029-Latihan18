@@ -1,0 +1,18 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menampilan bilangan kelipatan 3,5 dimulai dari
+ * 3,5 sampai 35.
+ */
+public class Latihan18 {
+    public static void main(String[] args) {
+        /*for ascending*/
+        System.out.println("Bilangan kelipatan 3,5 :");
+        for (double i = 3.5; i <= 35; i += 3.5){
+        System.out.println(i);
+        }
+}
+}

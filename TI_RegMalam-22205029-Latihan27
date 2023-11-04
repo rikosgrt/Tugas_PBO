@@ -1,0 +1,30 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menampilkan huruf besar dan kecil
+ */
+import java.util.Scanner;
+public class Latihan27 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Meminta pengguna untuk memasukkan kalimat
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = scanner.nextLine();
+
+        // Memformat kalimat menjadi huruf besar
+        String hurufBesar = kalimat.toUpperCase();
+
+        // Memformat kalimat menjadi huruf kecil
+        String hurufKecil = kalimat.toLowerCase();
+
+        // Menampilkan hasil
+        System.out.println("");
+        System.out.println("====Hasil Formating====");
+        System.out.println("Huruf besar: " + hurufBesar);
+        System.out.println("Huruf kecil: " + hurufKecil);
+    }
+}

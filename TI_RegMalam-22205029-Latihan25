@@ -1,0 +1,25 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Ejaan nama
+ */
+
+import java.util.Scanner;
+public class Latihan25 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan nama depan anda untuk dieja : ");
+        String nama = scanner.nextLine();
+
+        System.out.println("Ejaan untuk '" + nama + "' adalah :");
+        // Mengeja nama
+        for (int i = 0; i < nama.length(); i++) {
+            char huruf = nama.charAt(i);
+            System.out.println(huruf);
+        }
+    }
+}

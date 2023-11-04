@@ -1,0 +1,38 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menentukan perbandingan dua buah nilai
+ */
+import java.util.Scanner;
+public class Latihan24 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char ulangi;
+
+        System.out.println("===Program Perbandingan Nilai===");
+        do {
+            System.out.print("Masukkan nilai pertama \t: ");
+            int nilai1 = scanner.nextInt();
+
+            System.out.print("Masukkan nilai kedua \t: ");
+            int nilai2 = scanner.nextInt();
+
+            if (nilai1 > nilai2) {
+                System.out.printf("Hasil : %d lebih besar dari %d\n", nilai1, nilai2);
+            } else if (nilai1 < nilai2) {
+                System.out.printf("Hasil : %d lebih kecil dari %d\n", nilai1, nilai2);
+            } else {
+                System.out.printf("Hasil : %d sama dengan %d\n", nilai1, nilai2);
+            }
+
+            System.out.println();
+            System.out.print("Ulangi aktifitas? (y/n) : ");
+            ulangi = scanner.next().charAt(0);
+            System.out.println();
+        } while (ulangi == 'y' || ulangi == 'y');
+    }
+}
+

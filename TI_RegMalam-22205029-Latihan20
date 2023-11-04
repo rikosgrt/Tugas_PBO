@@ -1,0 +1,22 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Perhitungan lama tabungan sampai mencapai saldo target
+ */
+public class Latihan20 {
+    public static void main(String[] args) {
+        double saldoAwal = 3500000;
+        double bunga = 0.08;
+
+        int bulan = 0;
+
+        while (bulan < 8) {
+            bulan++;
+            saldoAwal += saldoAwal * bunga;
+            System.out.printf("Saldo di bulan ke-%d: %.2f\n", bulan, saldoAwal);
+        }
+    }
+}

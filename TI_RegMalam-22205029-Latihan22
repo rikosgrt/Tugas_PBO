@@ -1,0 +1,41 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Perhitungan lingkaran
+ */
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Latihan22 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        double diameter = 0;
+        boolean isValidInput = false;
+
+        System.out.println("========Perhitungan Lingkarang========");        
+        do {
+            try {
+                System.out.print("Masukkan diameter lingkaran : ");
+                diameter = scanner.nextDouble();
+
+                isValidInput = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Nilai diameter tidak sesuai.");
+                scanner.next(); // Membersihkan buffer dari input yang tidak sesuai.
+            }
+        } while (!isValidInput);
+
+        double jariJari = diameter / 2;
+        double luas = Math.PI * Math.pow(jariJari, 2);
+        double keliling = Math.PI * diameter;
+
+        System.out.println("=====Hasil Perhitungan Lingkarang=====");
+        System.out.printf("Jari-jari \t: %.2f\n", jariJari);
+        System.out.printf("Luas \t\t: %.2f\n", luas);
+        System.out.printf("Keliling \t: %.2f\n", keliling);
+        }
+    }

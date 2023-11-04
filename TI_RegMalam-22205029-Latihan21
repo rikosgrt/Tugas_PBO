@@ -1,0 +1,30 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menghitung rata-rata nilai yang diinput oleh user
+ */
+import java.util.Scanner;
+
+public class Latihan21 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Banyaknya Mahasiswa: ");
+        int banyaknyaMahasiswa = scanner.nextInt();
+
+        int total = 0;
+
+        for (int i = 0; i < banyaknyaMahasiswa; i++) {
+            System.out.printf("Nilai Mahasiswa ke-%d: ", i + 1);
+            int nilai = scanner.nextInt();
+            total += nilai;
+        }
+
+        double rataRata = (double) total / banyaknyaMahasiswa;
+
+        System.out.printf("Maka rata-rata nilainya adalah %.2f", rataRata);
+    }
+}

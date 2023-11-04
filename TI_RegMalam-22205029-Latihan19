@@ -1,0 +1,22 @@
+/**
+ *
+ * @author
+ * Nama     : Riko Sugiarto
+ * Kelas    : TI Reg. Malam
+ * NIM      : 22205029
+ * Deskripsi program : Menampilkan saldo dari bulan 1-6
+ */
+import java.text.DecimalFormat;
+public class Latihan19 {
+    public static void main(String[] args) {
+        int saldoAwal = 2500000;
+        double bunga = 0.15;
+
+        DecimalFormat formatUang = new DecimalFormat("#,###");
+
+        for (int bulan = 1; bulan <= 6; bulan++) {
+            saldoAwal += saldoAwal * bunga;
+            System.out.printf("Saldo di bulan ke-%d: Rp. %s\n", bulan, formatUang.format(saldoAwal));
+        }
+    }
+}
